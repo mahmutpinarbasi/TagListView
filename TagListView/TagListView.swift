@@ -203,7 +203,7 @@ open class TagListView: UIView {
     private(set) var tagBackgroundViews: [UIView] = []
     private(set) var rowViews: [UIView] = []
     private(set) var tagViewHeight: CGFloat = 0
-    private(set) var rows = 0 {
+    public private(set) var rows = 0 {
         didSet {
             invalidateIntrinsicContentSize()
         }
